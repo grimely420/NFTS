@@ -1,8 +1,12 @@
-body {
+html {
+    margin: 8px;
     width: 1000px !important;
     height: 700px !important;
-    background-color: rgb(15, 14, 14);
     border: 5px solid white;
+}
+
+body {
+    background-color: rgb(15, 14, 14);
 }
 
 @keyframes Shapes {
@@ -11,28 +15,38 @@ body {
         color: lawngreen;
         background-color: rgb(156, 197, 212);
     }
+    10% {
+        top: 100px;
+        color: rgba(36, 122, 148, 0.76);
+        background-color: rgb(42, 218, 50);
+    }
     15% {
-        top: 70px;
+        top: 120px;
         color: magenta;
         background-color: rgb(156, 197, 212);
     }
     25% {
-        top: 90px;
+        top: 140px;
         color: maroon;
         background-color: rgb(83, 0, 139);
     }
     50% {
-        top: 110px;
+        top: 160px;
         color: midnightblue;
         background-color: rgb(255, 0, 13);
     }
+    65% {
+        top: 180px;
+        color: rgba(218, 205, 30, 0.877);
+        background-color: rgb(255, 0, 13);
+    }
     75% {
-        top: 130px;
+        top: 190px;
         color: orangered;
         background-color: rgba(0, 139, 30, 0.842);
     }
     80% {
-        top: 150px;
+        top: 200px;
         background-color: rgba(13, 14, 13, 0);
         color: rgba(0, 0, 0, 0);
     }
@@ -43,7 +57,7 @@ body {
         left: 0%;
     }
     to {
-        left: 80%;
+        left: 85%;
     }
 }
 
