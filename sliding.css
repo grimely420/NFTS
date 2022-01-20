@@ -46,3 +46,29 @@ body {
         left: 80%;
     }
 }
+
+div {
+    border-radius: 50%;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    animation: Shapes 10s infinite;
+    animation-timing-function: ease-out;
+    flex-wrap: wrap;
+}
+
+#div1 {
+    left: 50px;
+}
+
+#div2 {
+    left: 50px;
+}
+
+#div3 {
+    left: 50px;
+}
+
+#div4 {
+    left: 50px;
+}
