@@ -72,3 +72,19 @@ div {
 #div4 {
     left: 50px;
 }
+
+.shape {
+    font-family: cursive;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    left: 0px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+}
