@@ -4,3 +4,45 @@ body {
     background-color: rgb(15, 14, 14);
     border: 5px solid white;
 }
+
+@keyframes Shapes {
+    0% {
+        top: 50px;
+        color: lawngreen;
+        background-color: rgb(156, 197, 212);
+    }
+    15% {
+        top: 70px;
+        color: magenta;
+        background-color: rgb(156, 197, 212);
+    }
+    25% {
+        top: 90px;
+        color: maroon;
+        background-color: rgb(83, 0, 139);
+    }
+    50% {
+        top: 110px;
+        color: midnightblue;
+        background-color: rgb(255, 0, 13);
+    }
+    75% {
+        top: 130px;
+        color: orangered;
+        background-color: rgba(0, 139, 30, 0.842);
+    }
+    80% {
+        top: 150px;
+        background-color: rgba(13, 14, 13, 0);
+        color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        color: rgba(0, 0, 0, 0);
+    }
+    from {
+        left: 0%;
+    }
+    to {
+        left: 80%;
+    }
+}
