@@ -1,0 +1,6 @@
+body {
+    width: 1000px !important;
+    height: 700px !important;
+    background-color: rgb(15, 14, 14);
+    border: 5px solid white;
+}
