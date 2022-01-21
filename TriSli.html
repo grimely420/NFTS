@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TriSLi</title>
+    <style>
+        html {
+            width: 1000px;
+            height: 700px;
+        }
+        
+        body {
+            background-color: chartreuse;
+        }
+        /* This styles the triangle to change diferent colors and move from left to right. */
+        
+        @keyframes triangle {
+            0% {
+                border-top: 75px solid rgb(233, 64, 21);
+            }
+            25% {
+                border-top: 75px solid rgb(83, 0, 139);
+            }
+            50% {
+                border-top: 75px solid rgb(33, 22, 190);
+            }
+            100% {
+                border-top: 75px solid rgba(0, 139, 30, 0.842);
+            }
+            from {
+                left: 0%;
+            }
+            to {
+                left: 77%;
+            }
+        }
+        /* This makes the style for the triangle's size and the width, height of the triangles. */
+        
+        .triangle {
+            position: relative !important;
+            top: 75px;
+            left: 50px;
+            border-top: 150px solid #555;
+            border-right: 125px solid transparent !important;
+            border-left: 125px solid transparent !important;
+            width: 0px !important;
+            height: 0px !important;
+            background-color: rgba(15, 14, 14, 0);
+            animation: triangle 10s infinite !important;
+            animation-timing-function: ease-out !important;
+        }
+        /* This styles the font for the words inside the triangle */
+        
+        #tri {
+            font-family: cursive;
+            font-weight: bold;
+            position: relative;
+            bottom: 75px;
+            right: 70px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>TriSLi</h1>
+
+    <div class="triangle">
+        <p id="tri">CRYPTOCURRENCY</p>
+    </div>
+    <div class="triangle">
+        <p id="tri">CRYPTOCURRENCY</p>
+    </div>
+    <div class="triangle">
+        <p id="tri">CRYPTOCURRENCY</p>
+    </div>
+    <div class="triangle">
+        <p id="tri">CRYPTOCURRENCY</p>
+    </div>
+</body>
