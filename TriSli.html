@@ -7,6 +7,8 @@
         html {
             width: 1000px;
             height: 700px;
+            border: white solid 10px;
+            margin: 5px 4px 5px 10px;
         }
         
         body {
@@ -16,6 +18,7 @@
         
         @keyframes triangle {
             0% {
+                left: 0%;
                 border-top: 75px solid rgb(233, 64, 21);
             }
             25% {
@@ -25,13 +28,30 @@
                 border-top: 75px solid rgb(33, 22, 190);
             }
             100% {
+                left: 76%;
                 border-top: 75px solid rgba(0, 139, 30, 0.842);
             }
-            from {
+        }
+        
+        @keyframes Tri {
+            0% {
+                top: 0px;
                 left: 0%;
+                border-top: 75px solid rgb(233, 64, 21);
             }
-            to {
-                left: 77%;
+            25% {
+                border-top: 75px solid rgb(83, 0, 139);
+            }
+            50% {
+                border-top: 75px solid rgb(33, 22, 190);
+            }
+            75% {
+                border-top: 75px solid rgba(226, 82, 16, 0.781);
+            }
+            100% {
+                top: 300px;
+                left: 76%;
+                border-top: 75px solid rgba(0, 139, 30, 0.842);
             }
         }
         /* This makes the style for the triangle's size and the width, height of the triangles. */
@@ -49,6 +69,20 @@
             animation: triangle 10s infinite !important;
             animation-timing-function: ease-out !important;
         }
+        
+        .Tri {
+            position: relative !important;
+            top: 50px;
+            left: 50px;
+            border-top: 150px solid #555;
+            border-right: 125px solid transparent !important;
+            border-left: 125px solid transparent !important;
+            width: 0px !important;
+            height: 0px !important;
+            background-color: rgba(15, 14, 14, 0);
+            animation: Tri 10s infinite !important;
+            animation-timing-function: ease-out !important;
+        }
         /* This styles the font for the words inside the triangle */
         
         #tri {
@@ -56,8 +90,14 @@
             font-weight: bold;
             position: relative;
             bottom: 75px;
-            right: 70px;
+            right: 20px;
             text-align: center;
+        }
+        /* This styles the header for the page */
+        
+        h1 {
+            text-align: center;
+            color: white;
         }
     </style>
 </head>
@@ -66,16 +106,16 @@
 
     <h1>TriSLi</h1>
 
-    <div class="triangle">
-        <p id="tri">CRYPTOCURRENCY</p>
+    <div class="Tri">
+        <p id="tri">TriSLi</p>
+    </div>
+    <div class="Tri">
+        <p id="tri">TriSLi</p>
     </div>
     <div class="triangle">
-        <p id="tri">CRYPTOCURRENCY</p>
+        <p id="tri">TriSLi</p>
     </div>
     <div class="triangle">
-        <p id="tri">CRYPTOCURRENCY</p>
-    </div>
-    <div class="triangle">
-        <p id="tri">CRYPTOCURRENCY</p>
+        <p id="tri">TriSLi</p>
     </div>
 </body>
