@@ -1,0 +1,50 @@
+/* Possibly Interesting Stuff */
+
+#rabbit {
+    background: url('https://assets.codepen.io/641/park5_rabbit.png') 0 0 / 100% 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    width: 14.64844%;
+    padding-top: 31.00586%;
+}
+
+body {
+    background: #000;
+}
+
+.wrapper {
+    max-width: 133.33vh;
+    margin: 0 auto;
+}
+
+.page {
+    background: #431236;
+    height: 0;
+    overflow: hidden;
+    padding-top: 75%;
+    position: relative;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.foreground {
+    height: 100%;
+    background: url('https://assets.codepen.io/641/bg_park5_2.png') no-repeat 100% 100% / 100% auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.background {
+    background: url('https://assets.codepen.io/641/bg_park5_1.png') no-repeat 0 0 / 100% auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
