@@ -9,18 +9,20 @@ var rabbitDownKeyframes = new KeyframeEffect(
 
 var rabbitDownAnimation = new Animation(rabbitDownKeyframes, document.timeline);
 
-// On tap or click,
-whiteRabbit.addEventListener("mousedown", downHeGoes, false);
-whiteRabbit.addEventListener("touchstart", downHeGoes, false);
+
 
 // Trigger a single-fire animation
-function downHeGoes(event) {
+function downHeGoes(_event) {
 
-    // Remove those event listeners
-    whiteRabbit.removeEventListener("mousedown", downHeGoes, false);
-    whiteRabbit.removeEventListener("touchstart", downHeGoes, false);
+
+    rabbitdown(rabbitDownAnimation.play());
 
     // Play rabbit animation
-    rabbitDownAnimation.play();
 
+
+}
+
+function rabbitdown() {
+    whiteRabbit.removeEventListener("mousedown", downHeGoes, true);
+    whiteRabbit.removeEventListener("touchstart", downHeGoes, true);
 }
